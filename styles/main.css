@@ -246,7 +246,7 @@ a, ul, li, u {
   width: 200px;
 }
 .order__step:not(:last-child)::after {
-  content: url("assets/images/points.png");
+  content: url("../assets/images/points.png");
   position: absolute;
   top: 33%;
   right: -4.5rem;
@@ -468,7 +468,7 @@ a, ul, li, u {
   color: #3E9CDC;
 }
 @media (max-width: 1100px) {
-  .footer .footer__inner {
+  .footer__inner {
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -477,6 +477,12 @@ a, ul, li, u {
   .footer .footer__contacts {
     border: none;
     padding: 0;
+  }
+}
+@media (max-width: 400px) {
+  .footer__payments {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
