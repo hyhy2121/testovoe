@@ -1,0 +1,74 @@
+@use 'variables' as vars;
+@use 'sass:math';
+@use 'mixins' as mix;
+
+.container {
+  max-width: vars.$max-width;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  background: url('/assets/images/bg.png') no-repeat center top;
+  background-size: cover;
+  position: relative;
+
+  &__inner {
+    background: rgba(16,16,16,0.9);
+    padding: 1rem 0;
+  }
+
+   &__burger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    span {
+      display: block;
+      height: 3px;
+      border-radius: 2px;
+      background: vars.$color-text-light;
+    }
+  }
+
+  @include mix.respond-to(md) {
+    overflow: hidden;
+    .header__burger { display: flex; }
+    .header__nav {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background: rgba(16,16,16,0.95);
+      flex-direction: column;
+      align-items: flex-start;
+      width: 80%;
+      max-width: 300px;
+      padding: 1rem;
+      transform: translateX(100%);
+      transition: transform .3s;
+      &.is-open {
+        transform: translateX(0);
+      }
+      .header__link { margin-bottom: 1rem; }
+    }
+  }
+}
+
+.header__inner{
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header__hero{
+  color: #000;
+}
+.main {
+  padding-bottom: 150px;
+  background: url('/assets/images/bgMain.png') no-repeat center;
+}

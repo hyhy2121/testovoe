@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Тестовое задание</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <div class="container header__container">
+                <a href="#" class="header__logo">LoremIpsum.<u>Net</u></a>
+                <button class="header__burger" aria-label="Меню">
+                    <span></span><span></span><span></span>
+                </button>
+                <nav class="header__nav">
+                    <a href="#" class="header__link">Бизнес</a>
+                    <a href="#" class="header__link">О нас</a>
+                    <a href="#" class="header__link">Цены</a>
+                    <a href="#" class="header__link">Оформить заказ</a>
+                </nav>
+            </div>
+        </div>
+        <div class="container header__hero">
+            <h1 class="hero__title"><u>Lorem ipsum</u> dolor sit<br>ametconsectetur <u>adipiscing</u></h1>
+            <h3 class="hero__subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus!</h3>
+            <p class="hero__text">
+                - Totam rem aperiam eaque ipsa<br>
+                - Sit voluptatem accusantium doloremque laudantium<br>
+                - Sed ut perspiciatis, unde omnis iste natus error
+            </p>
+            <div class="hero__actions">
+                <button class="btn btn--primary">Заказать</button>
+                <button class="btn btn--secondary">Подробнее</button>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="order">
+            <div class="container order__inner">
+                <h2 class="order__title">Оформление <u>заказа</u></h2>
+                <p class="order__subtitle">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+                <ul class="order__steps">
+                    <li class="order__step"><img src="/assets/images/search.svg" alt="Поиск" class="order__icon"
+                            loading="lazy">
+                        <p class="order__desc">Lorem ipsum dolor sit amet</p>
+                    </li>
+                    <li class="order__step"><img src="/assets/images/percent.svg" alt="Процент" class="order__icon"
+                            loading="lazy">
+                        <p class="order__desc">Consectetur adipiscing elit</p>
+                    </li>
+                    <li class="order__step"><img src="/assets/images/document.svg" alt="Документ" class="order__icon"
+                            loading="lazy">
+                        <p class="order__desc">Sed do eiusmod tempor</p>
+                    </li>
+                    <li class="order__step"><img src="/assets/images/mail.svg" alt="Почта" class="order__icon"
+                            loading="lazy">
+                        <p class="order__desc">Esse cillum dolore eu fugiat</p>
+                    </li>
+                    <li class="order__step"><img src="/assets/images/money.svg" alt="Оплата" class="order__icon"
+                            loading="lazy">
+                        <p class="order__desc">Excepteur sint occaecat cupidatat non proident</p>
+                    </li>
+                </ul>
+                <form class="order__form" action="#" method="POST">
+                    <div class="order__form-row">
+                        <select name="payment" class="order__select" required>
+                            <option value="">Выберите тип системы</option>
+                            <option>Sed ut perspiciatis</option>
+                            <option>Nemo enim ipsam</option>
+                            <option>Et harum quidem</option>
+                            <option>Temporibus autem</option>
+                            <option>Itaque earum rerum</option>
+                        </select>
+                        <input type="email" name="email" class="order__input" placeholder="Email" required>
+                        <input type="text" name="name" class="order__input" placeholder="Имя" required>
+                    </div>
+                    <div class="order__form-row">
+                        <div class="order__slider-wrapper">
+                            <label class="order__slider-label"><span class="order__slider-text">Sed ut
+                                    perspiciatis...</span><span id="percent"
+                                    class="order__slider-percent">75%</span></label>
+                            <input id="slider" type="range" name="progress" class="order__slider" min="0" max="100"
+                                value="75">
+                        </div>
+                        <div class="order__file-upload">
+                            <input type="file" name="file" id="file-upload" class="order__file-input">
+                            <label for="file-upload" class="order__file-label">Прикрепите файл</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn--primary order__submit">Отправить</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p class="footer__copyright">
+                © 2018 «LoremIpsum.net» Все права защищены.</p>
+            <nav class="footer__payments">
+                <a href="#" class="footer__link"><img src="/assets/images/qiwi.svg" alt="Qiwi" loading="lazy"
+                        class="footer__icon">Qiwi wallet</a>
+                <a href="#" class="footer__link"><img src="/assets/images/yandex.svg" alt="Yandex" loading="lazy"
+                        class="footer__icon">Yandex Money</a>
+                <a href="#" class="footer__link"><img src="/assets/images/web.svg" alt="WebMoney" loading="lazy"
+                        class="footer__icon">Web Money</a>
+            </nav>
+            <nav class="footer__contacts">
+                <a href="mailto:info@ipsum228.com" class="footer__link">info@ipsum228.com</a>
+                <a href="#" class="footer__link"><img src="/assets/images/vk.svg" alt="VK" loading="lazy"
+                        class="footer__icon">Мы вконтакте</a>
+            </nav>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>

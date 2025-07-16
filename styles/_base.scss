@@ -1,0 +1,21 @@
+@use 'variables' as vars;
+@use 'sass:math';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: vars.$font-family-body;
+  font: math.div(vars.$font-base, vars.$line-height-base) sans-serif;
+  background: vars.$color-bg-dark;
+  color: vars.$color-text-light;
+}
+
+a, ul, li, u {
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+}
