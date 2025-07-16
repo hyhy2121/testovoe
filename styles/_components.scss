@@ -173,7 +173,7 @@
     width: 200px;
 
     &:not(:last-child)::after {
-      content: url('assets/images/points.png');
+      content: url('../assets/images/points.png');
       position: absolute;
       top: 33%;
       right: -4.5rem; 
