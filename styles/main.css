@@ -26,7 +26,7 @@ a, ul, li, u {
 }
 
 .header {
-  background: url("/assets/images/bg.png") no-repeat center top;
+  background: url("../assets/images/bg.png") no-repeat center top;
   background-size: cover;
   position: relative;
 }
@@ -90,7 +90,7 @@ a, ul, li, u {
 
 .main {
   padding-bottom: 150px;
-  background: url("/assets/images/bgMain.png") no-repeat center;
+  background: url("../assets/images/bgMain.png") no-repeat center;
 }
 
 .header__container {
@@ -246,7 +246,7 @@ a, ul, li, u {
   width: 200px;
 }
 .order__step:not(:last-child)::after {
-  content: url("/assets/images/points.png");
+  content: url("assets/images/points.png");
   position: absolute;
   top: 33%;
   right: -4.5rem;
@@ -339,7 +339,7 @@ a, ul, li, u {
   cursor: pointer;
 }
 .order__form__file-label::before {
-  content: url("/assets/images/file.svg");
+  content: url("../assets/images/file.svg");
   margin-right: 0.5rem;
   vertical-align: middle;
 }
@@ -424,7 +424,7 @@ a, ul, li, u {
   text-transform: uppercase;
 }
 .order__file-upload .order__file-label::before {
-  content: url("/assets/images/file.svg");
+  content: url("assets/images/file.svg");
   margin-right: 0.5rem;
   vertical-align: middle;
 }

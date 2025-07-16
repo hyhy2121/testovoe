@@ -275,7 +275,7 @@
       cursor: pointer;
 
       &::before {
-        content: url('assets/images/file.svg');
+        content: url('../assets/images/file.svg');
         margin-right: 0.5rem;
         vertical-align: middle;
       }
