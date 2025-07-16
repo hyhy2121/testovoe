@@ -173,7 +173,7 @@
     width: 200px;
 
     &:not(:last-child)::after {
-      content: url('/assets/images/points.png');
+      content: url('assets/images/points.png');
       position: absolute;
       top: 33%;
       right: -4.5rem; 
@@ -275,7 +275,7 @@
       cursor: pointer;
 
       &::before {
-        content: url('/assets/images/file.svg');
+        content: url('assets/images/file.svg');
         margin-right: 0.5rem;
         vertical-align: middle;
       }
@@ -361,7 +361,7 @@
     text-transform: uppercase;
 
     &::before {
-      content: url('/assets/images/file.svg');
+      content: url('assets/images/file.svg');
       margin-right: 0.5rem;
       vertical-align: middle;
     }
